@@ -11,27 +11,14 @@ class ElectricShock extends StatelessWidget {
     Color hexColor = Color(0xFF01213E);
     final number = '995';
 
-     return Scaffold(
+    return Scaffold(
       appBar: AppBar(
-        title: Row(
-          children: [
-         //   Padding(
-            //  padding: EdgeInsets.only(left:1),
-              Image.asset(
-                'images/logo.png',
-                height: 40,
-              ),
-          //  ),
-            Text('Electric Shock Page'),
-          ],
-        ),
+        title: Text('Electric Shock Page'),
       ),
-      body: SingleChildScrollView( 
+      body: SingleChildScrollView(
         child: Container(
           child: Padding(
-            padding: EdgeInsets.only(
-                left: 20.0, right: 40.0),
-                 
+            padding: EdgeInsets.only(left: 20.0, right: 40.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -44,14 +31,12 @@ class ElectricShock extends StatelessWidget {
                     fontStyle: FontStyle.normal,
                   ),
                 ),
-                SizedBox(
-                    height: 15.0), 
+                SizedBox(height: 15.0),
                 Text(
                   'Description:',
                   style: GoogleFonts.nunito(
                     fontSize: 20,
-                    color:
-                        Colors.black, 
+                    color: Colors.black,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -60,8 +45,7 @@ class ElectricShock extends StatelessWidget {
                   'Our bodies conduct electricity. If any part of your body meets live electricity an electric current flows through the tissues, which causes an electric shock. \nDepending on the length and severity the electric shock, injuries can include\n• Burns to the skin\n• Burns to internal tissues\n• Electrical interference or damage (or both) to the heart, which could cause the heart to stop or beat erratically. \n- Mayo Clinic.',
                   style: GoogleFonts.nunito(
                     fontSize: 16,
-                    color:
-                        Colors.black, 
+                    color: Colors.black,
                     fontWeight: FontWeight.w300,
                   ),
                 ),
@@ -70,18 +54,17 @@ class ElectricShock extends StatelessWidget {
                   'Signs and Symptoms:',
                   style: GoogleFonts.nunito(
                     fontSize: 20,
-                    color:
-                        Colors.black, 
+                    color: Colors.black,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 SizedBox(height: 10.0),
                 Center(
                   child: Image.asset(
-                    'images/an-infographic-of-effects-on-the-body-shock.jpg', 
-                    width: 500, 
-                    height: 300, 
-                    fit: BoxFit.contain, 
+                    'images/an-infographic-of-effects-on-the-body-shock.jpg',
+                    width: 500,
+                    height: 300,
+                    fit: BoxFit.contain,
                   ),
                 ),
               ],
@@ -90,8 +73,7 @@ class ElectricShock extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: Padding(
-        padding: EdgeInsets.symmetric(
-            horizontal: 20.0, vertical: 10.0), 
+        padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -116,7 +98,7 @@ class ElectricShock extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ElectricShockFirstAid(), 
+                    builder: (context) => ElectricShockFirstAid(),
                   ),
                 );
               },

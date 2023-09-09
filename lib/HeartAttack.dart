@@ -47,8 +47,7 @@ class HeartAttack extends StatelessWidget {
                 '"A heart attack occurs when the flow of blood to the heart is severely reduced or blocked. The blockage is usually due to a buildup of fat, cholesterol, and other substances in the heart (coronary) arteries" \n- Mayo Clinic.',
                 style: GoogleFonts.nunito(
                   fontSize: 16,
-                  color:
-                      Colors.black, 
+                  color: Colors.black,
                   fontWeight: FontWeight.w300,
                 ),
               ),
@@ -57,18 +56,17 @@ class HeartAttack extends StatelessWidget {
                 'Signs and Symptoms:',
                 style: GoogleFonts.nunito(
                   fontSize: 20,
-                  color:
-                      Colors.black, 
+                  color: Colors.black,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               SizedBox(height: 10.0),
               Center(
                 child: Image.asset(
-                  'images/heartattack.jpg', 
-                  width: 500, 
-                  height: 300, 
-                  fit: BoxFit.contain, 
+                  'images/heartattack.jpg',
+                  width: 500,
+                  height: 300,
+                  fit: BoxFit.contain,
                 ),
               ),
             ],
@@ -76,8 +74,7 @@ class HeartAttack extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: Padding(
-        padding: EdgeInsets.symmetric(
-            horizontal: 20.0, vertical: 10.0), 
+        padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
