@@ -1,3 +1,7 @@
+import 'package:first_aid_app/Anaphylaxis.dart';
+//import 'package:first_aid_app/CutsAndScrape.dart';
+import 'package:first_aid_app/Drowning.dart';
+import 'package:first_aid_app/BurnsAndScalds.dart';
 import 'package:flutter/material.dart';
 import 'package:first_aid_app/HeartAttack.dart';
 import 'package:first_aid_app/Poisoning.dart';
@@ -62,7 +66,14 @@ class _MyHomePageState extends State<MyHomePage> {
       return;
     }
 
-    final searchKeywords = ['Heart attack', 'Poisoning', 'Electric shock'];
+    final searchKeywords = [
+      'Heart attack',
+      'Poisoning',
+      'Electric shock',
+      'Anaphylaxis',
+      'Burns and Scalds',
+      'Drowning'
+    ];
     final lowercaseQuery = query.toLowerCase();
     final filteredResults = searchKeywords
         .where((keyword) => keyword.toLowerCase().contains(lowercaseQuery))
@@ -216,6 +227,38 @@ class _MyHomePageState extends State<MyHomePage> {
                             builder: (context) => Poisoning(),
                           ),
                         );
+                        break;
+                      case 'anaphylaxis':
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Anaphylaxis(),
+                          ),
+                        );
+                        break;
+                      case 'drowning':
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Drowning(),
+                          ),
+                        );
+                        break;
+                      case 'burns and scalds':
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => BurnsAndScalds(),
+                          ),
+                        );
+                        break;
+                    /*  case 'cuts and scrapes':
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => CutsAndScrape(),
+                          ),
+                        );*/
                         break;
                       case 'electric shock':
                         Navigator.push(

@@ -78,6 +78,11 @@ flutter:
     - images/an-infographic-of-effects-on-the-body-shock.jpg
     - images/Electrical-Shock-Survival-915x1024.webp
     - images/logo.png
+    - images/anaphylaxis.jpeg
+    - images/burnsandscalds.jpg
+    - images/burns-scalds-500x500.webp
+    - images/001-Signs-of-Drowning-Pic-1024x791-1.jpg
+    - images/logo-removebg-preview.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

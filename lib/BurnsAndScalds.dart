@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:first_aid_app/button.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:first_aid_app/ElectricShockFirstAid.dart';
+import 'package:first_aid_app/BurnsAndScaldsFirstAid.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 
-class ElectricShock extends StatelessWidget {
-  @override
+class BurnsAndScalds extends StatelessWidget {
+ @override
   Widget build(BuildContext context) {
     Color hexColor = Color(0xFF01213E);
     final number = '995';
@@ -14,7 +14,7 @@ class ElectricShock extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 255, 255, 255),
-  title: Text('Electric Shock'),
+  title: Text('Burns and Scalds'),
   actions: [
     Padding(
       padding: const EdgeInsets.all(8.0),
@@ -34,7 +34,7 @@ class ElectricShock extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Electric Shock \n(Electrocution)',
+                  'Burns And Scalds',
                   style: GoogleFonts.nunito(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -53,13 +53,26 @@ class ElectricShock extends StatelessWidget {
                 ),
                 SizedBox(height: 5.0),
                 Text(
-                  'Our bodies conduct electricity. If any part of your body meets live electricity an electric current flows through the tissues, which causes an electric shock. \nDepending on the length and severity the electric shock, injuries can include\n• Burns to the skin\n• Burns to internal tissues\n• Electrical interference or damage (or both) to the heart, which could cause the heart to stop or beat erratically. \n- Mayo Clinic.',
+                  '“A burn is caused by dry heat – by an iron or fire, for example. A scald is caused by something wet, such as hot water or steam. \nBurns can be very painful and may cause:',
                   style: GoogleFonts.nunito(
                     fontSize: 16,
                     color: Colors.black,
                     fontWeight: FontWeight.w300,
                   ),
                 ),
+                Text('\n1. Red or peeling \n2. Blisters\n3. Swelling \n4. White or charred skin\n',
+                style: GoogleFonts.nunito(
+                    fontSize: 16,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold)),
+                SizedBox(height: 1.0),
+                Text(
+                  '“The amount of pain you feel isn\t always related to how serious the burn is. Even a very serious burn may be relatively painless." \n-NHS Inform',
+                  style: GoogleFonts.nunito(
+                    fontSize: 16,
+                    color: Colors.black,
+                    fontWeight: FontWeight.w300,
+                  )),
                 SizedBox(height: 10.0),
                 Text(
                   'Signs and Symptoms:',
@@ -72,7 +85,7 @@ class ElectricShock extends StatelessWidget {
                 SizedBox(height: 10.0),
                 Center(
                   child: Image.asset(
-                    'images/an-infographic-of-effects-on-the-body-shock.jpg',
+                    'images/burnsandscalds.jpg',
                     width: 500,
                     height: 300,
                     fit: BoxFit.contain,
@@ -109,7 +122,7 @@ class ElectricShock extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ElectricShockFirstAid(),
+                    builder: (context) => BurnsAndScaldsFirstAid(),
                   ),
                 );
               },

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class ElectricShockFirstAid extends StatelessWidget {
+class BurnsAndScaldsFirstAid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Color hexColor = Color(0xFF01213E);
@@ -10,7 +10,7 @@ class ElectricShockFirstAid extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 255, 255, 255),
-  title: Text('Electric Shock First Aid'),
+  title: Text('Burns and Scalds First Aid'),
   actions: [
     Padding(
       padding: const EdgeInsets.all(8.0),
@@ -30,7 +30,7 @@ class ElectricShockFirstAid extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Electric Shock \n(Electrocution)',
+                  'Burns and Scalds',
                   style: GoogleFonts.nunito(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -49,7 +49,7 @@ class ElectricShockFirstAid extends StatelessWidget {
                 ),
                 SizedBox(height: 5.0),
                 Text(
-                  '1. Dressings / Cling wrap',
+                  '1. Gauze or clean cloth (AED)\n2. Aloe vera or cocoa butter \n3. Cool water \n4. Pain relievers like Paracetamol',
                   style: GoogleFonts.nunito(
                     fontSize: 16,
                     color: Colors.black,
@@ -67,7 +67,15 @@ class ElectricShockFirstAid extends StatelessWidget {
                 ),
                 SizedBox(height: 10.0),
                 Text(
-                  '• Check for danger – make sure you, the injured person and others around you are safe.',
+                  'For major burns:',
+                  style: GoogleFonts.nunito(
+                    fontSize: 20,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  '• Protect from further harm, turn off power for electrical burns, and don\t remove clothing stuck in the burn.',
                   style: GoogleFonts.nunito(
                     fontSize: 16,
                     color: Colors.black,
@@ -76,25 +84,25 @@ class ElectricShockFirstAid extends StatelessWidget {
                 ),
                 SizedBox(height: 10.0),
                 Text(
-                  '• Try to switch off or disconnect the power supply. Do not touch the person until you are sure power is turned off. \nBe careful in wet environments, such as bathrooms, as water conducts electricity.',
+                  '• Ensure the person is breathing; perform rescue breathing if necessary.',
                   style: GoogleFonts.nunito(
                     fontSize: 16,
                     color: Colors.black,
                     fontWeight: FontWeight.w300,
                   ),
                 ),
-              
                 SizedBox(height: 10.0),
                 Text(
-                  '• If you cannot switch off the power supply, try to remove the person without touching them directly. \nUse something that is dry and does not conduct electricity (such as a wooden broom handle)',
+                  '• Remove tight items and cover the burn with gauze or a clean cloth.',
                   style: GoogleFonts.nunito(
                     fontSize: 16,
                     color: Colors.black,
                     fontWeight: FontWeight.w300,
-                  )),
-                  SizedBox(height: 10.0),
+                  ),
+                ),
+                SizedBox(height: 10.0),
                 Text(
-                  '• If they have burns: Cool the burn area with cool running water for 20 minutes. \nCover burns with dressings that won’t stick to the skin. If you don’t have dressings available, loosely applied cling wrap can be used. Do not apply cling wrap tightly or wrap around a body part, as this will cause complications if the injured area swells.',
+                  '• Watch for signs of shock: cool, clammy skin, weak pulse, and shallow breathing.',
                   style: GoogleFonts.nunito(
                     fontSize: 16,
                     color: Colors.black,
@@ -103,19 +111,63 @@ class ElectricShockFirstAid extends StatelessWidget {
                 ),
                  SizedBox(height: 10.0),
                 Text(
-                  '• Follow the DRSABCD method for first aid which includes checking the injured person’s response, airway and breathing. It may be necessary to start cardiopulmonary resuscitation (CPR).',
+                  'For minor burns:',
+                  style: GoogleFonts.nunito(
+                    fontSize: 20,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  '• Cool the burn with cool (not cold) running water for 10 minutes or use a wet cloth for facial burns.',
                   style: GoogleFonts.nunito(
                     fontSize: 16,
                     color: Colors.black,
                     fontWeight: FontWeight.w300,
                   ),
                 ),
-                 SizedBox(height: 10.0),
+                SizedBox(height: 10.0),
+                Text(
+                  '• Don\t break blisters; if they break, clean gently and apply antibiotic ointment.',
+                  style: GoogleFonts.nunito(
+                    fontSize: 16,
+                    color: Colors.black,
+                    fontWeight: FontWeight.w300,
+                  ),
+                ),
+                SizedBox(height: 10.0),
+                Text(
+                  '• Apply lotion with aloe vera or cocoa butter and bandage the burn loosely.',
+                  style: GoogleFonts.nunito(
+                    fontSize: 16,
+                    color: Colors.black,
+                    fontWeight: FontWeight.w300,
+                  ),
+                ),
+                SizedBox(height: 10.0),
+                Text(
+                  '• Consider taking a nonprescription pain reliever. Treat pain with paracetamol or ibuprofen.',
+                  style: GoogleFonts.nunito(
+                    fontSize: 16,
+                    color: Colors.black,
+                    fontWeight: FontWeight.w300,
+                  ),
+                ),
+                SizedBox(height: 10.0),
+                Text(
+                  '• If possible, elevate the affected area to reduce swelling.',
+                  style: GoogleFonts.nunito(
+                    fontSize: 16,
+                    color: Colors.black,
+                    fontWeight: FontWeight.w300,
+                  ),
+                ),
+                 SizedBox(height: 15.0),
               Center(
                 child: Image.asset(
-                  'images/Electrical-Shock-Survival-915x1024.webp', 
-                  width: 300, 
-                  height: 350, 
+                  'images/burns-scalds-500x500.webp', 
+                  width: 500, 
+                  height: 500, 
                   fit: BoxFit.contain, 
                 ),
               )

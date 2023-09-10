@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:first_aid_app/button.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:first_aid_app/ElectricShockFirstAid.dart';
+import 'package:first_aid_app/DrowningFirstAid.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 
-class ElectricShock extends StatelessWidget {
+class Drowning extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Color hexColor = Color(0xFF01213E);
@@ -14,17 +14,17 @@ class ElectricShock extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 255, 255, 255),
-  title: Text('Electric Shock'),
-  actions: [
-    Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Image.asset(
-        'images/logo-removebg-preview.png', 
-        width: 100, 
-        height: 100, 
-      ),
-    ),
-  ],
+        title: Text('Drowning'),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Image.asset(
+              'images/logo-removebg-preview.png',
+              width: 100,
+              height: 100,
+            ),
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -34,7 +34,7 @@ class ElectricShock extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Electric Shock \n(Electrocution)',
+                  'Drowning',
                   style: GoogleFonts.nunito(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -53,7 +53,7 @@ class ElectricShock extends StatelessWidget {
                 ),
                 SizedBox(height: 5.0),
                 Text(
-                  'Our bodies conduct electricity. If any part of your body meets live electricity an electric current flows through the tissues, which causes an electric shock. \nDepending on the length and severity the electric shock, injuries can include\n• Burns to the skin\n• Burns to internal tissues\n• Electrical interference or damage (or both) to the heart, which could cause the heart to stop or beat erratically. \n- Mayo Clinic.',
+                  '“Drowning occurs when submersion in liquid causes suffocation or interferes with breathing. During drowning, the body is deprived of oxygen, which can damage organs, particularly the brain.Doctors evaluate people for oxygen deprivation and problems that often accompany drowning (such as spinal injuries caused by diving)." \n-MSD Manual',
                   style: GoogleFonts.nunito(
                     fontSize: 16,
                     color: Colors.black,
@@ -69,10 +69,10 @@ class ElectricShock extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: 10.0),
+                SizedBox(height: 5.0),
                 Center(
                   child: Image.asset(
-                    'images/an-infographic-of-effects-on-the-body-shock.jpg',
+                    'images/001-Signs-of-Drowning-Pic-1024x791-1.jpg',
                     width: 500,
                     height: 300,
                     fit: BoxFit.contain,
@@ -109,7 +109,7 @@ class ElectricShock extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ElectricShockFirstAid(),
+                    builder: (context) => DrowningFirstAid(),
                   ),
                 );
               },

@@ -9,7 +9,18 @@ class PoisoningFirstAid extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Poisoning First Aid'),
+        backgroundColor: Color.fromARGB(255, 255, 255, 255),
+  title: Text('Food Poisoning First Aid '),
+  actions: [
+    Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Image.asset(
+        'images/logo-removebg-preview.png', 
+        width: 100, 
+        height: 100, 
+      ),
+    ),
+  ],
       ),
       body: SingleChildScrollView(
         child: Container(

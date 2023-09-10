@@ -13,7 +13,18 @@ class HeartAttack extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Heart Attack Page'),
+        backgroundColor: Color.fromARGB(255, 255, 255, 255),
+  title: Text('Heart Attack'),
+  actions: [
+    Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Image.asset(
+        'images/logo-removebg-preview.png', 
+        width: 100, 
+        height: 100, 
+      ),
+    ),
+  ],
       ),
       body: Container(
         child: Padding(

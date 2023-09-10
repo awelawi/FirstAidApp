@@ -8,8 +8,19 @@ class HeartAttackFirstAid extends StatelessWidget {
     final number = '995';
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Heart Attack First Aid'),
+      appBar:AppBar(
+        backgroundColor: Color.fromARGB(255, 255, 255, 255),
+  title: Text('Heart Attack First Aid'),
+  actions: [
+    Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Image.asset(
+        'images/logo-removebg-preview.png', 
+        width: 100, 
+        height: 100, 
+      ),
+    ),
+  ],
       ),
       body: SingleChildScrollView(
         child: Container(
