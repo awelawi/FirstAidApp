@@ -13,6 +13,7 @@ import 'Drowning.dart';
 import 'ElectricShock.dart';
 import 'HeartAttack.dart';
 import 'Poisoning.dart';
+import 'doctor_card.dart';
 import 'emergency_card.dart';
 
 
@@ -24,6 +25,21 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
+  bool showHospitalContainer = false;
+  bool showDoctorContainer = true;
+
+  void toggleContainers(String type) {
+    setState(() {
+      if (type == 'hospital') {
+        showHospitalContainer = true;
+        showDoctorContainer = false;
+      } else if (type == 'doctor') {
+        showHospitalContainer = false;
+        showDoctorContainer = true;
+      }
+    });
+  }
 
   late final PageController pageController;
 
@@ -477,7 +493,137 @@ class _HomePageState extends State<HomePage> {
           ),
           SizedBox(height: 20,),
 
+          // Doctor and Hospital Service
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            child: Column(
+              children: [
+                Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Center(
+                        child: InkWell(
+                          onTap: () {
+                            toggleContainers('doctor');
+                          },
+                          child: Container(
+                            decoration: showDoctorContainer
+                                ? BoxDecoration(
+                              border: Border(
+                                bottom: BorderSide(
+                                  color: Colors.black,
+                                  width: 2.5,
+                                ),
+                              ),
+                            )
+                                : null,
+                            child: Text(
+                              'Doctors',
+                              style: GoogleFonts.nunito(
+                                  textStyle: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 24,
+                                  )
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 20),
+                      Center(
+                        child: InkWell(
+                          onTap: () {
+                            toggleContainers('hospital');
+                          },
+                          child: Container(
+                            decoration: showHospitalContainer
+                                ? BoxDecoration(
+                              border: Border(
+                                bottom: BorderSide(
+                                  color: Colors.black,
+                                  width: 2.5,
+                                ),
+                              ),
+                            )
+                                : null,
+                            child: Text(
+                              'Hospitals',
+                              style: GoogleFonts.nunito(
+                                  textStyle: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 24,
+                                  )
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ]
+                ),
+                Column(
+                  children: [
+                    Visibility(
+                      visible: showHospitalContainer,
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                        height: 200,
+                        color: Colors.green,
+                        child: Center(
+                          child: Text('Hospital Container'),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Visibility(
+                  visible: showDoctorContainer,
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                    height: 200,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        DoctorCard(
+                            doctorImagePath: 'assets/images/female-doctor-using-her-digital-tablet-free-vector.jpg',
+                            doctorName: 'Dr. Ella',
+                            doctorRating: '5.0',
+                            doctorContact: '+1234567890',
+                            doctorLocation: 'USA',
+                            doctorSpecialization: 'Surgeon'),
+                        SizedBox(width: 20,),
 
+                        DoctorCard(
+                            doctorImagePath: 'assets/images/female-doctor-using-her-digital-tablet-free-vector.jpg',
+                            doctorName: 'Dr. Ella',
+                            doctorRating: '5.0',
+                            doctorContact: '+1234567890',
+                            doctorLocation: 'USA',
+                            doctorSpecialization: 'Surgeon'),
+                        SizedBox(width: 20,),
+
+                        DoctorCard(
+                            doctorImagePath: 'assets/images/female-doctor-using-her-digital-tablet-free-vector.jpg',
+                            doctorName: 'Dr. Ella',
+                            doctorRating: '5.0',
+                            doctorContact: '+1234567890',
+                            doctorLocation: 'USA',
+                            doctorSpecialization: 'Surgeon'),
+                        SizedBox(width: 20,),
+
+                        DoctorCard(
+                            doctorImagePath: 'assets/images/female-doctor-using-her-digital-tablet-free-vector.jpg',
+                            doctorName: 'Dr. Ella',
+                            doctorRating: '5.0',
+                            doctorContact: '+1234567890',
+                            doctorLocation: 'USA',
+                            doctorSpecialization: 'Surgeon')
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
