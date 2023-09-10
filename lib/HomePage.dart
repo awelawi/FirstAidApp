@@ -459,6 +459,25 @@ class _HomePageState extends State<HomePage> {
                 ],
               )
           ),
+
+          //Services
+          SizedBox(height: 20,),
+          Container(
+            child: Padding(
+              padding: const EdgeInsets.all(25.0),
+              child: Text("Services",
+                style: GoogleFonts.nunito(
+                    textStyle: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
+                    )
+                ),
+              ),
+            ),
+          ),
+          SizedBox(height: 20,),
+
+
         ],
       ),
     );
