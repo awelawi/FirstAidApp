@@ -181,6 +181,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       appBar: AppBar(
+        backgroundColor: Color(0xFFBEE1E7),
         title: Row(
           children: [
             Padding(
@@ -194,7 +195,15 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             SizedBox(width: 8),
-            Text('First Screen'),
+            Padding(
+              padding: const EdgeInsets.only(top: 25.0, left: 25.0),
+              child: Center(child: Text('Main Page',
+                style: TextStyle(
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
+                ),
+              )),
+            ),
           ],
         ),
       ),
@@ -595,7 +604,7 @@ class _HomePageState extends State<HomePage> {
                       child: Container(
                         padding: const EdgeInsets.symmetric(horizontal: 25.0),
                         height: 200,
-                        color: Colors.green,
+                        color: Colors.grey,
                         child: Center(
                           child: Text('Hospital Container'),
                         ),
