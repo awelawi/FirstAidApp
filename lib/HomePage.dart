@@ -13,8 +13,8 @@ import 'Drowning.dart';
 import 'ElectricShock.dart';
 import 'HeartAttack.dart';
 import 'Poisoning.dart';
-import 'doctor_card.dart';
-import 'emergency_card.dart';
+import 'DoctorCards.dart';
+import 'EmergencyCard.dart';
 
 
 class HomePage extends StatefulWidget {
@@ -188,7 +188,7 @@ class _HomePageState extends State<HomePage> {
               child: Align(
                 alignment: Alignment.topLeft,
                 child: Image.asset(
-                  'images/logo.png',
+                  'assets/images/logo.png',
                   height: 40,
                 ),
               ),
@@ -409,7 +409,7 @@ class _HomePageState extends State<HomePage> {
                               // Image.asset("assets/images/man_holding_red_first_aid_box.jpg"),
                                 height: 200,
                                 width: 200,
-                                child: Image.asset("images/first-aid-kit-isolated-red-background-medical-paramedic-survival-first-aid-kit-bag-cpr_651618-382.jpg")
+                                child: Image.asset("assets/images/first-aid-kit-isolated-red-background-medical-paramedic-survival-first-aid-kit-bag-cpr_651618-382.jpg")
                             ),
                             //  icon of humans hand'
                           ],
@@ -446,31 +446,59 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   EmergencyCard(
                       emergencyImagePath: 'assets/images/What-is-Anaphylactic-Shock.jpg',
-                      emergencyName: 'Anaphylaxis'),
+                      emergencyName: 'Anaphylaxis',
+                    onTap: () {
+                      // Navigate to Page1 when the card is tapped
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Anaphylaxis()));
+                    },
+                  ),
                   SizedBox(width: 25 ,),
-                  EmergencyCard(
-                      emergencyImagePath: 'assets/images/cuts_scrapes_children_first_aid.jpg',
-                      emergencyName: 'Cuts/Scrapes'),
                   SizedBox(width: 25 ,),
                   EmergencyCard(
                       emergencyImagePath: 'assets/images/electric_shock_first_aid.jpg',
-                      emergencyName: 'electric shock'),
+                      emergencyName: 'electric shock',
+                      onTap: () {
+                        print("This has been clicked");
+                        // Navigate to Page1 when the card is tapped
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => ElectricShock()));
+                      }
+                  ),
                   SizedBox(width: 25 ,),
                   EmergencyCard(
                       emergencyImagePath: 'assets/images/burns_scalds.jpeg',
-                      emergencyName: 'Burns & Scalds'),
+                      emergencyName: 'Burns & Scalds',
+                      onTap: () {
+                        // Navigate to Page1 when the card is tapped
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => BurnsAndScalds()));
+                      }
+                  ),
                   SizedBox(width: 25 ,),
                   EmergencyCard(
                       emergencyImagePath: 'assets/images/heart_attack.jpeg',
-                      emergencyName: 'Heart Attack'),
+                      emergencyName: 'Heart Attack',
+                      onTap: () {
+                        // Navigate to Page1 when the card is tapped
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => HeartAttack()));
+                      }
+                  ),
                   SizedBox(width: 25 ,),
                   EmergencyCard(
                       emergencyImagePath: 'assets/images/How-Do-You-Know-When-Someone-is-Drowning.jpg',
-                      emergencyName: 'Drowning'),
+                      emergencyName: 'Drowning',
+                      onTap: () {
+                        // Navigate to Page1 when the card is tapped
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => Drowning()));
+                      }
+                  ),
                   SizedBox(width: 25 ,),
                   EmergencyCard(
                       emergencyImagePath: 'assets/images/Woman-poisoning.jpg',
-                      emergencyName: 'Poisoning'),
+                      emergencyName: 'Poisoning',
+                      onTap: () {
+                        // Navigate to Page1 when the card is tapped
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => Poisoning()));
+                      }
+                  ),
                   SizedBox(width: 25 ,),
                 ],
               )

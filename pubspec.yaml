@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: '>=3.1.1 <4.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -51,7 +51,7 @@ dev_dependencies:
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "images/logo.png"
+  image_path: "assets/images/logo.png"
   min_sdk_android: 21 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -71,28 +71,28 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - images/heartattack.jpg
-    - images/how-to-do-cpr-1298446-4a04444fabe0467aa9194a9161e5cdb2.png
-    - images/foodpoisoning.jpg
-    - images/Food-Poisoning.png
-    - images/an-infographic-of-effects-on-the-body-shock.jpg
-    - images/Electrical-Shock-Survival-915x1024.webp
-    - images/logo.png
-    - images/anaphylaxis.jpeg
-    - images/burnsandscalds.jpg
-    - images/burns-scalds-500x500.webp
-    - images/001-Signs-of-Drowning-Pic-1024x791-1.jpg
-    - images/logo-removebg-preview.png
-    - images/How-Do-You-Know-When-Someone-is-Drowning.jpg
-    - images/burns_scalds.jpeg
-    - images/cuts_scrapes_children_first_aid.jpg
-    - images/man_holding_red_first_aid_box.jpg
-    - images/electric_shock_first_aid.jpg
-    - images/heart_attack.jpeg
-    - images/What-is-Anaphylactic-Shock.jpg
-    - images/Woman-poisoning.jpg
-    - images/female-doctor-using-her-digital-tablet-free-vector.jpg
-    - images/first-aid-kit-isolated-red-background-medical-paramedic-survival-first-aid-kit-bag-cpr_651618-382.jpg
+    - assets/images/heartattack.jpg
+    - assets/images/how-to-do-cpr-1298446-4a04444fabe0467aa9194a9161e5cdb2.png
+    - assets/images/foodpoisoning.jpg
+    - assets/images/Food-Poisoning.png
+    - assets/images/an-infographic-of-effects-on-the-body-shock.jpg
+    - assets/images/Electrical-Shock-Survival-915x1024.webp
+    - assets/images/logo.png
+    - assets/images/anaphylaxis.jpeg
+    - assets/images/burnsandscalds.jpg
+    - assets/images/burns-scalds-500x500.webp
+    - assets/images/001-Signs-of-Drowning-Pic-1024x791-1.jpg
+    - assets/images/logo-removebg-preview.png
+    - assets/images/How-Do-You-Know-When-Someone-is-Drowning.jpg
+    - assets/images/burns_scalds.jpeg
+    - assets/images/cuts_scrapes_children_first_aid.jpg
+    - assets/images/man_holding_red_first_aid_box.jpg
+    - assets/images/electric_shock_first_aid.jpg
+    - assets/images/heart_attack.jpeg
+    - assets/images/What-is-Anaphylactic-Shock.jpg
+    - assets/images/Woman-poisoning.jpg
+    - assets/images/female-doctor-using-her-digital-tablet-free-vector.jpg
+    - assets/images/first-aid-kit-isolated-red-background-medical-paramedic-survival-first-aid-kit-bag-cpr_651618-382.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
