@@ -113,7 +113,7 @@ class HeartAttack extends StatelessWidget {
                     MaterialPageRoute(
                       builder: (context) => HeartAttackFirstAid(),
                     ),
-                  ),
+                  )
                 );
               },
               child: Text(
