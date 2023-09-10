@@ -1,2 +1,71 @@
 # FirstAidApp
-A firstaid app built for medihacks
+A firstaid app built for MediHacks
+
+<h1>MediHacks 2023</h1>
+
+<center>
+	<img src="https://d112y698adiu2z.cloudfront.net/photos/production/challenge_photos/002/543/942/datas/full_width.png">
+</center>
+
+<h2 align="center">First Aid Guide</h2>
+
+Summary: **Connecting individuals with useful first aid treatments, specialized doctors, and more**
+
+<h2>Project idea and Structure</h2>
+
+## Introduction
+First aid can be administered in a variety of ways. When someone requires basic first aid, it's always a good idea to be prepared.
+
+## Inspiration
+Our team was inspired by the fast growing heatlthcare innovation and medical sector using technology to the better future for human beings.
+
+We aim to protect and support each other in our own communities and worldwide, particularly those people who need us.
+
+## Problem Statement
+With the guided demonstration, you will learn all of the available ways to use standard medical practices to provide first aid in various situations.
+
+## How we built it 
+Our App, First Aid App is built in Flutter (cross-platform framework developed by Google) using DART programming language, for guiding people about basic first aid and other medical techniques as well as finding the best possoble Doctors, Hospitals.
+
+**App Name** : 1AID
+
+## Challenges
+It was difficult to work across three different time zones.
+
+We're all new to hackathons, sa that was a big challenge !
+
+We encountered to create and fetch Doctors and Hosiptals API using public datasets, but we found out that thier API having pricing to use. We decided to reduce the scope of the project to deal with the issues.
+
+
+## Accomplishment
+ We got the bare bones of our application and the code to work better.
+
+## Learned something new:
+We learned to work as a team. Learned about the new Fluuter framework and DART. Learned about connecting the workflow of the git version control in the team.
+
+## What's next for 'Prject Name' ?
+We have a lot of work to do to bring the First Aid and it's concept to fruition.
+
+<h3 align="left"> Languages and Tools</h3>
+
+**Languages**: Flutter, DART, Kotlin and Bash/Powershell
+
+**Tools**: Figma, Notion, Android Studio, VS Code
+
+
+
+#### Feel free to connect with us
+- [@awelawi](https://github.com/awelawi/)
+- [@Teee728](https://github.com/Teee728)
+- [salsabila]()
+- [stlajay](https://github.com/stlajay)
+
+## Team Work: [Link1](https://youtu.be/dlDQBFSTLW0?si=CkU5lmeqju13QFmR), [Link2](https://butter-cornflower-1b1.notion.site/MediHacks-Progress-of-Team-Work-8dfc9457e6064db48851ad3501983473?pvs=25), [Link3](https://www.figma.com/file/mJt4rSTEuXvF0wq7KtevqL/First-aid-app?type=design&mode=design&t=JXLhTpYiMV5apRwk-1)
+<!-- Youtube Link, Notion Link, Figma UI -->
+
+
+## Demo Video: [Link]()
+## Submission on Devpost: [Link](https://devpost.com/software/1aid-gkm3in?ref_content=my-projects-tab&ref_feature=my_projects)
+
+
+Happy hacking !!
