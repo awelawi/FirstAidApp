@@ -57,11 +57,17 @@ We have a lot of work to do to bring the First Aid and its concept to fruition.
 #### Feel free to connect with us
 - [@awelawi](https://github.com/awelawi/)
 - [@Teee728](https://github.com/Teee728)
-- [salsabila]()
-- [stlajay](https://github.com/stlajay)
+- [@Saly3046](https://github.com/Saly3046/)
+- [@stlajay](https://github.com/stlajay)
 
-## Team Work: [Link1](https://youtu.be/dlDQBFSTLW0?si=CkU5lmeqju13QFmR), [Link2](https://butter-cornflower-1b1.notion.site/MediHacks-Progress-of-Team-Work-8dfc9457e6064db48851ad3501983473?pvs=25), [Link3](https://www.figma.com/file/mJt4rSTEuXvF0wq7KtevqL/First-aid-app?type=design&mode=design&t=JXLhTpYiMV5apRwk-1)
-<!-- Youtube Link, Notion Link, Figma UI -->
+### Team Work: 
+
+Video: [Link](https://youtu.be/dlDQBFSTLW0?si=CkU5lmeqju13QFmR)
+
+Notion: [Link](https://butter-cornflower-1b1.notion.site/MediHacks-Progress-of-Team-Work-8dfc9457e6064db48851ad3501983473?pvs=25)
+
+Figma: [Link](https://www.figma.com/file/mJt4rSTEuXvF0wq7KtevqL/First-aid-app?type=design&mode=design&t=JXLhTpYiMV5apRwk-1)
+<!-- Youtube Link, Notion Link, Figma UI Only for DEMONSTRATION -->
 
 
 ## Demo Video: [Link]()
