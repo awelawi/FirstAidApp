@@ -13,6 +13,7 @@ import 'Drowning.dart';
 import 'ElectricShock.dart';
 import 'HeartAttack.dart';
 import 'Poisoning.dart';
+import 'emergency_card.dart';
 
 
 class HomePage extends StatefulWidget {
@@ -401,6 +402,62 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
+          ),
+
+          //  FirstAid Emergencies Cards
+          SizedBox(height: 30,),
+          Container(
+            child: Padding(
+
+              padding: const EdgeInsets.all(25.0),
+              child: Text("First Aid Emergencies",
+                  style: GoogleFonts.nunito(
+                      textStyle: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24,
+                      )
+                  )
+              ),
+            ),
+          ),
+          SizedBox(height: 20,),
+
+          Container(
+              padding: EdgeInsets.only(right: 25.0),
+              height: 250,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  EmergencyCard(
+                      emergencyImagePath: 'assets/images/What-is-Anaphylactic-Shock.jpg',
+                      emergencyName: 'Anaphylaxis'),
+                  SizedBox(width: 25 ,),
+                  EmergencyCard(
+                      emergencyImagePath: 'assets/images/cuts_scrapes_children_first_aid.jpg',
+                      emergencyName: 'Cuts/Scrapes'),
+                  SizedBox(width: 25 ,),
+                  EmergencyCard(
+                      emergencyImagePath: 'assets/images/electric_shock_first_aid.jpg',
+                      emergencyName: 'electric shock'),
+                  SizedBox(width: 25 ,),
+                  EmergencyCard(
+                      emergencyImagePath: 'assets/images/burns_scalds.jpeg',
+                      emergencyName: 'Burns & Scalds'),
+                  SizedBox(width: 25 ,),
+                  EmergencyCard(
+                      emergencyImagePath: 'assets/images/heart_attack.jpeg',
+                      emergencyName: 'Heart Attack'),
+                  SizedBox(width: 25 ,),
+                  EmergencyCard(
+                      emergencyImagePath: 'assets/images/How-Do-You-Know-When-Someone-is-Drowning.jpg',
+                      emergencyName: 'Drowning'),
+                  SizedBox(width: 25 ,),
+                  EmergencyCard(
+                      emergencyImagePath: 'assets/images/Woman-poisoning.jpg',
+                      emergencyName: 'Poisoning'),
+                  SizedBox(width: 25 ,),
+                ],
+              )
           ),
         ],
       ),
