@@ -1,52 +1,29 @@
-import 'package:first_aid_app/Anaphylaxis.dart';
-//import 'package:first_aid_app/CutsAndScrape.dart';
-import 'package:first_aid_app/Drowning.dart';
-import 'package:first_aid_app/BurnsAndScalds.dart';
+import 'dart:async';
+
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:first_aid_app/HeartAttack.dart';
-import 'package:first_aid_app/Poisoning.dart';
-import 'package:first_aid_app/ElectricShock.dart';
+import 'package:flutter/rendering.dart';
+import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:csc_picker/csc_picker.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
-import 'HomePage.dart';
+import 'Anaphylaxis.dart';
+import 'BurnsAndScalds.dart';
+import 'Drowning.dart';
+import 'ElectricShock.dart';
+import 'HeartAttack.dart';
+import 'Poisoning.dart';
 
-void main() {
-  runApp(const MyApp());
-}
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key});
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: '1AID',
-      theme: ThemeData(
-        appBarTheme: AppBarTheme(
-          backgroundColor: Colors.white,
-          titleTextStyle: TextStyle(
-            color: Color.fromARGB(255, 255, 255, 255),
-          ),
-        ),
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Color.fromARGB(255, 246, 242, 242),
-        ),
-        useMaterial3: true,
-      ),
-      home: HomePage(),
-    );
-  }
+  State<HomePage> createState() => _HomePageState();
 }
 
-class MyHomePage extends StatefulWidget {
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
+class _HomePageState extends State<HomePage> {
 
-class _MyHomePageState extends State<MyHomePage> {
   late final PageController pageController;
 
   @override
@@ -254,7 +231,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         );
                         break;
-                    /*  case 'cuts and scrapes':
+                        /*  case 'cuts and scrapes':
                         Navigator.push(
                           context,
                           MaterialPageRoute(
