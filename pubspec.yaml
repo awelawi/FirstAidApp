@@ -83,6 +83,16 @@ flutter:
     - images/burns-scalds-500x500.webp
     - images/001-Signs-of-Drowning-Pic-1024x791-1.jpg
     - images/logo-removebg-preview.png
+    - images/How-Do-You-Know-When-Someone-is-Drowning.jpg
+    - images/burns_scalds.jpeg
+    - images/cuts_scrapes_children_first_aid.jpg
+    - images/man_holding_red_first_aid_box.jpg
+    - images/electric_shock_first_aid.jpg
+    - images/heart_attack.jpeg
+    - images/What-is-Anaphylactic-Shock.jpg
+    - images/Woman-poisoning.jpg
+    - images/female-doctor-using-her-digital-tablet-free-vector.jpg
+    - images/first-aid-kit-isolated-red-background-medical-paramedic-survival-first-aid-kit-bag-cpr_651618-382.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
